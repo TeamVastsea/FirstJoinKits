@@ -1,0 +1,4 @@
+name: FirstJoinKits
+version: '${project.version}'
+main: cc.vastsea.firstjoinkits.FirstJoinKits
+api-version: '1.18'
