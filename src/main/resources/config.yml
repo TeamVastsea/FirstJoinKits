@@ -1,0 +1,25 @@
+message: "Welcome to this server! &bItems has been added to your inventory."
+items:
+  - material: "apple"
+    display: "love"
+    amount: 20
+    lore:
+      - "Welcome to this server"
+      - "This is a warm welcome from admin"
+      - "Have a nice day :)"
+    enchantment:
+      - id: "arrow_infinite"
+        level: 3
+  - material: "paper"
+    display: "hahaha"
+    amount: 3
+    lore:
+      - "Hello"
+      - "Please &bread instructions"
+  - material: "diamond_sword"
+    enchantment:
+      - id: "fire_aspect"
+        level: 3
+commands:
+  - "say new player joined at %player_biome%!"
+  - "kill %player_name%"
