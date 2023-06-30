@@ -42,7 +42,7 @@ public class FJKCommand implements CommandExecutor {
     boolean reloadKits(Player sender) {
         FirstJoinKits.instance.reloadConfig();
         FirstJoinKits.config = FirstJoinKits.instance.getConfig();
-        sender.sendMessage("配置文件已经重新加载");
+        sender.sendMessage("配置文件已重新加载");
         return true;
     }
 }
