@@ -3,15 +3,12 @@ version: '${project.version}'
 main: cc.vastsea.firstjoinkits.FirstJoinKits
 api-version: '1.18'
 commands:
-  give-kits:
-    description: "Give a kit for player."
-    usage: "/give-kits [player]"
-    permission: "firstjoinkits.give-kits"
-    permission-message: "You don't have the permission to give the kits."
-  kits-reload:
-    description: "Reload the plugin."
-    usage: "/kits-reload"
-    permission: "firstjoinkits.reload"
-    permission-message: "You don't have the permission to reload."
+  firstjoinkits:
+    aliases:
+      - "fjk"
+    description: "Plugin command."
+    usage: "/firstjoinkits <sub command> [args]"
+    permission: "firstjoinkits.command"
+    permission-message: "You don't have the permission."
 
 depend: [PlaceholderAPI]

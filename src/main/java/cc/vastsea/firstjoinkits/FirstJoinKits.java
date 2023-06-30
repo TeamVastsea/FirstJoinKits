@@ -26,8 +26,9 @@ public final class FirstJoinKits extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new PlayerJoinEventHandler(), this);
 
-        if (Bukkit.getPluginCommand("give-kits") != null) {
-            Objects.requireNonNull(Bukkit.getPluginCommand("give-kits")).setExecutor(new GiveKitsCommand());
+        if (Bukkit.getPluginCommand("firstjoinkits") != null) {
+            Objects.requireNonNull(Bukkit.getPluginCommand("firstjoinkits")).setExecutor(new FJKCommand());
+            Objects.requireNonNull(Bukkit.getPluginCommand("firstjoinkits")).setTabCompleter(new FJKCommandTab());
         }
 
         getLogger().info("First Join Kits Enabled.");
